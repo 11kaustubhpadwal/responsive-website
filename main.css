@@ -20,6 +20,7 @@
   line-height: 19px;
   color: #1c2085;
   justify-self: center;
+  padding: 0 5px;
 }
 
 .navbar__link--active {
@@ -213,6 +214,11 @@
   line-height: 34px;
   color: #38a5db;
   padding: 20px 0px 10px;
+}
+
+.team__member--name a {
+  text-decoration: none;
+  color: #38a5db;
 }
 
 .team__member--position {
@@ -457,4 +463,79 @@
 .footer__row2--tc {
   border-right: 2px solid #9ca4c7;
   padding: 0 90px 0 0;
+}
+
+/* Section - Modal */
+
+.modal {
+  background: #ffffff !important;
+  box-shadow: 0px 4px 44px rgba(0, 0, 0, 0.25) !important;
+  border-radius: 20px !important;
+  padding: 30px 30px !important;
+  width: 630px;
+  height: 744px;
+}
+
+.modal .close-modal {
+  display: none !important;
+}
+
+.modal__close {
+  text-align: end;
+}
+
+.modal__name {
+  font-family: Sen;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 34px;
+  text-align: center;
+  color: #38a5db;
+  padding: 25px 0;
+}
+
+.modal__position {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 0.26px;
+  color: #011226;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  padding: 0 0 30px;
+}
+
+.modal__info {
+  font-family: Sen;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: #45515f;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  height: 525px;
+}
+
+.modal__info::-webkit-scrollbar {
+  width: 10px;
+  background: #2c3676;
+  border-radius: 20px;
+}
+
+.modal__info::-webkit-scrollbar-track {
+  width: 10px;
+  background: #ffffff;
+  border-radius: 20px;
+}
+
+.modal__info::-webkit-scrollbar-thumb {
+  width: 10px;
+  background: #2c3676;
+  opacity: 0.4;
+  border-radius: 20px;
 }
