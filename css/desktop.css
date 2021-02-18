@@ -166,7 +166,7 @@
 
   .content__video {
     position: absolute;
-    z-index: 2;
+    z-index: 4;
     width: 35%;
     color: #ffffff;
     top: 30%;
@@ -180,28 +180,34 @@
 
   .content__video--play-button {
     position: absolute;
-    z-index: 2;
+    z-index: 4;
     top: 30%;
     right: 34%;
+    width: 151px;
+    height: 151px;
   }
 
   .content__social-icons-for-company {
     position: absolute;
-    z-index: 2;
+    z-index: 4;
     top: 90%;
     right: 5%;
   }
 
   .content__social-icons-for-company-icon {
     padding: 5px;
+    width: 40px;
+    height: 40px;
   }
 
   .content__down-arrow {
     position: absolute;
-    z-index: 2;
+    z-index: 4;
     color: #ffffff;
     top: 103%;
     left: 50%;
+    width: 60px;
+    height: 60px;
   }
 
   /* Section - Team */
@@ -402,6 +408,23 @@
     margin: 30px 40px 0;
   }
 
+  .contact__form--input-button:focus {
+    width: 95px;
+    height: 46px;
+    background: #38a5db;
+    box-shadow: 0px 12px 44px rgba(56, 165, 219, 0.6);
+    border-radius: 23px;
+    border: none;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #ffffff;
+    margin: 30px 40px 0;
+    outline: none;
+  }
+
   /* Section - Footer */
 
   .footer {
@@ -462,6 +485,22 @@
     font-size: 16px;
     line-height: 22px;
     color: #ffffff;
+  }
+
+  .footer__row1--button-style:focus {
+    background: #38a5db;
+    box-shadow: 0px 12px 44px rgba(56, 165, 219, 0.6);
+    border-radius: 23px;
+    border: none;
+    width: 220px;
+    height: 46px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #ffffff;
+    outline: none;
   }
 
   .footer__row2 {

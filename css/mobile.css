@@ -46,16 +46,15 @@
 
   /* container for absolute elements to simulate that these elements are still in the flow of the document */
   .content {
-    width: 100%;
-    height: 1000px;
+    height: 550px;
   }
 
   .content__bg--2 {
     position: absolute;
     z-index: 2;
-    top: 72px;
+    top: 55px;
     left: 0;
-    width: 200px;
+    width: 250px !important;
   }
 
   .content__bg--1 {
@@ -63,13 +62,15 @@
     z-index: 3;
     top: 55px;
     left: 0;
-    width: 350px;
+    width: 700px !important;
   }
 
   .content__text {
     position: absolute;
     z-index: 4;
-    width: 35%;
+    width: 70%;
+    top: 10%;
+    left: 10%;
     color: #ffffff;
   }
 
@@ -77,118 +78,79 @@
     font-family: Sen;
     font-style: normal;
     font-weight: bold;
-    font-size: 40px;
-    line-height: 56px;
+    font-size: 24px;
+    line-height: 32px;
     letter-spacing: 0.2px;
   }
 
   .content__subscribe {
-    position: absolute;
-    z-index: 4;
-    width: 50%;
-    color: #ffffff;
-    display: inline-block;
-    top: 60px;
-    left: 0;
+    display: none;
   }
 
   .content__subscribe--text {
-    font-family: Sen;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 26px;
-    padding: 20px 0;
+    display: none;
   }
 
   .content__subscribe--input {
-    font-family: Sen;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 17px;
-    line-height: 20px;
-    color: #576677;
-    background: #ffffff;
-    border-radius: 25px;
-    padding: 0 20px;
-    border: none;
-    width: 480px;
-    height: 46px;
+    display: none;
   }
 
   .content__subscribe--input:focus {
-    font-family: Sen;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 17px;
-    line-height: 20px;
-    color: #576677;
-    background: #ffffff;
-    border-radius: 25px;
-    padding: 0 20px;
-    border: none;
-    width: 480px;
-    height: 46px;
-    outline: none;
+    display: none;
   }
 
   .content__subscribe--button {
-    position: absolute;
-    z-index: 3;
-    font-family: Open Sans;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 17px;
-    line-height: 23px;
-    text-align: center;
-    color: #ffffff;
-    background: #38a5db;
-    border-radius: 25px;
-    border: none;
-    width: 154px;
-    height: 46px;
-    left: 60%;
+    display: none;
   }
 
   .content__subscribe--button:focus {
-    position: absolute;
-    z-index: 3;
-    font-family: Open Sans;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 17px;
-    line-height: 23px;
-    text-align: center;
-    color: #ffffff;
-    background: #38a5db;
-    border-radius: 25px;
-    border: none;
-    width: 154px;
-    height: 46px;
-    left: 60%;
-    outline: none;
-  }
-
-  .content__down-arrow {
-    position: absolute;
-    z-index: 2;
-    color: #ffffff;
-    top: 103%;
-    left: 50%;
+    display: none;
   }
 
   .content__video {
     position: absolute;
-    z-index: 2;
-    width: 35%;
-    margin: 200px 0 50px 60%;
+    z-index: 4;
+    width: 79.5%;
     color: #ffffff;
-    top: 40px;
-    left: 0;
+    top: 45%;
+    left: 10.5%;
   }
 
   .content__video--style {
     width: 100%;
+    border-radius: 4px;
+  }
+
+  .content__video--play-button {
+    position: absolute;
+    z-index: 4;
+    top: 24%;
+    right: 30%;
+    width: 100px;
+    height: 100px;
+  }
+
+  .content__social-icons-for-company {
+    position: absolute;
+    z-index: 4;
+    top: 23%;
+    right: 5%;
+  }
+
+  .content__social-icons-for-company-icon {
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+  }
+
+  .content__down-arrow {
+    position: absolute;
+    z-index: 4;
+    color: #ffffff;
+    top: 37.5%;
+    left: 50%;
+    width: 30px;
+    height: 30px;
   }
 
   /* Section - Team */
@@ -411,6 +373,23 @@
     margin: 30px 24px 0;
   }
 
+  .contact__form--input-button:focus {
+    width: 95px;
+    height: 46px;
+    background: #38a5db;
+    box-shadow: 0px 12px 44px rgba(56, 165, 219, 0.6);
+    border-radius: 23px;
+    border: none;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #ffffff;
+    margin: 30px 40px 0;
+    outline: none;
+  }
+
   /* Section - Footer */
 
   .footer {
@@ -480,6 +459,22 @@
     font-size: 16px;
     line-height: 22px;
     color: #ffffff;
+  }
+
+  .footer__row1--button-style:focus {
+    background: #38a5db;
+    box-shadow: 0px 12px 44px rgba(56, 165, 219, 0.6);
+    border-radius: 23px;
+    border: none;
+    width: 220px;
+    height: 46px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #ffffff;
+    outline: none;
   }
 
   .footer__row2 {
