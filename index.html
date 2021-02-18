@@ -6,7 +6,7 @@
 
     <!-- Custom stylesheets -->
     <link rel="stylesheet" href="./desktop.css" />
-    <!-- <link rel="stylesheet" href="./tablet.css" /> -->
+    <link rel="stylesheet" href="./tablet.css" />
 
     <!-- Google Fonts links -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -249,7 +249,7 @@
     <section>
       <div class="team">
         <p class="team__text">TEAM</p>
-        <div class="team__members">
+        <div class="team__members" onscroll="changeCurrentPortion">
           <div class="team__member">
             <svg
               width="131"
@@ -646,6 +646,12 @@
               </div>
             </div>
           </div>
+        </div>
+        <div class="team__scroller">
+          <div
+            class="team__scroller-circle team__scroller-circle--active"
+          ></div>
+          <div class="team__scroller-circle"></div>
         </div>
       </div>
     </section>

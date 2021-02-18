@@ -2,15 +2,16 @@
   margin: 0;
 }
 
-/* Desktop */
-@media only screen and (min-width: 768px) {
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 1439px) {
   /* Section - Navbar */
 
   .navbar {
     display: grid;
     grid-template-columns: 9fr 1fr 1fr 1fr;
-    padding: 16px 136px;
+    padding: 16px 32px;
     align-items: center;
+    gap: 15px;
   }
 
   .navbar__link {
@@ -62,10 +63,7 @@
     position: absolute;
     z-index: 4;
     width: 35%;
-    margin: 200px 100px 50px;
     color: #ffffff;
-    top: 40px;
-    left: 0;
   }
 
   .content__text--main {
@@ -77,23 +75,23 @@
     letter-spacing: 0.2px;
   }
 
-  .content__text--secondary {
+  .content__subscribe {
+    position: absolute;
+    z-index: 4;
+    width: 50%;
+    color: #ffffff;
+    display: inline-block;
+    top: 60px;
+    left: 0;
+  }
+
+  .content__subscribe--text {
     font-family: Sen;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
     line-height: 26px;
-    margin: 155px 0px 20px;
-  }
-
-  .content__subscribe {
-    position: absolute;
-    z-index: 2;
-    width: 50%;
-    margin: 200px 100px 50px;
-    color: #ffffff;
-    display: inline-block;
-    top: 60%;
+    padding: 20px 0;
   }
 
   .content__subscribe--input {
@@ -190,7 +188,7 @@
 
   .team {
     text-align: center;
-    padding: 0 0 100px;
+    padding: 0 0 50px;
   }
 
   .team__text {
@@ -206,8 +204,10 @@
 
   .team__members {
     display: grid;
-    grid-template-columns: 3fr 3fr 3fr 3fr;
-    padding: 30px 150px;
+    grid-template-columns: 300px 300px 300px 300px;
+    padding: 0 30px;
+    grid-auto-flow: column;
+    overflow-x: scroll;
   }
 
   .team__member--name {
@@ -257,15 +257,36 @@
 
   .team__member--social-icons-icon-container {
     mix-blend-mode: normal;
-    opacity: 0.3;
-    border: 1px solid #7f8b98;
+    border: 1px solid rgba(0, 0, 0, 0.3);
     box-sizing: border-box;
     border-radius: 3px;
     width: 50px;
   }
 
   .team__member--social-icons-icon {
-    opacity: 1;
+    color: #001832;
+  }
+
+  .team__scroller {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    gap: 15px;
+    margin: 50px 0 0 0;
+  }
+
+  .team__scroller-circle {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #c4c4c4;
+  }
+
+  .team__scroller-circle--active {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #4250bf;
   }
 
   /* Section - Contact */
@@ -344,19 +365,18 @@
     gap: 10px;
   }
 
-  .contact__form--input-checkbox {
+  .contact__form--input-checkbox-container {
     width: 24px;
     height: 24px;
     background: #ffffff;
     border-radius: 4px;
   }
 
-  .contact__form--input-checkbox:focus {
+  .contact__form--input-checkbox {
+    background: #38a5db;
     width: 24px;
     height: 24px;
-    background: #ffffff;
     border-radius: 4px;
-    outline: none;
   }
 
   .contact__form--input-label {
@@ -401,8 +421,8 @@
 
   .footer__row1 {
     display: grid;
-    grid-template-columns: 4fr 4fr 4fr;
-    padding: 40px 50px 55px;
+    grid-template-columns: auto auto auto;
+    padding: 40px 0 55px;
     align-items: center;
     justify-items: center;
   }
@@ -450,8 +470,8 @@
 
   .footer__row2 {
     display: grid;
-    grid-template-columns: 3fr 3fr 3fr 3fr;
-    padding: 0 250px;
+    grid-template-columns: auto auto auto auto;
+    padding: 0 0;
     align-items: center;
     justify-items: center;
     font-family: Sen;
@@ -464,17 +484,17 @@
 
   .footer__row2--copyright {
     border-right: 2px solid #9ca4c7;
-    padding: 0 70px 0 0;
+    padding: 0 35px 0 0;
   }
 
   .footer__row2--faq {
     border-right: 2px solid #9ca4c7;
-    padding: 0 80px 0 0;
+    padding: 0 40px 0 0;
   }
 
   .footer__row2--tc {
     border-right: 2px solid #9ca4c7;
-    padding: 0 90px 0 0;
+    padding: 0 45px 0 0;
   }
 
   /* Section - Modal */

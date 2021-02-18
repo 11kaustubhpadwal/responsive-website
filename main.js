@@ -20,6 +20,10 @@ const activateLink3 = () => {
   document.getElementById("link1").classList.remove("navbar__link--active");
 };
 
+// Section - Team
+
+const changeCurrentPortion = () => {};
+
 // Section - Contact
 
 const activateCheckbox = () => {
