@@ -4,8 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Custom stylesheet -->
-    <link rel="stylesheet" href="./main.css" />
+    <!-- Custom stylesheets -->
+    <link rel="stylesheet" href="./desktop.css" />
+    <!-- <link rel="stylesheet" href="./tablet.css" /> -->
 
     <!-- Google Fonts links -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -54,7 +55,7 @@
     </section>
 
     <!-- Section - Content -->
-    <section>
+    <!-- <section>
       <div class="content">
         <div class="content__bg--3">
           <svg
@@ -194,11 +195,11 @@
             The first fully-automatic social crypto trading platform with real
             crypto currency
           </h1>
-          <p class="content__text--secondary">
-            Subscribe and get the lastes information
-          </p>
         </div>
         <div class="content__subscribe">
+          <p class="content__subscribe--text">
+            Subscribe and get the lastes information
+          </p>
           <input
             class="content__subscribe--input"
             type="text"
@@ -242,7 +243,7 @@
           </video>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- Section - Team -->
     <section>
@@ -667,8 +668,13 @@
             placeholder="Your Email"
           />
           <div class="contact__form--input-group">
-            <input type="checkbox" class="contact__form--input-checkbox" />
-            <p class="contact__form--input-label">Checkbox</p>
+            <div
+              class="contact__form--input-checkbox-container"
+              onClick="activateCheckbox()"
+            >
+              <div id="checkbox"></div>
+            </div>
+            <div class="contact__form--input-label">Checkbox</div>
           </div>
           <button class="contact__form--input-button">Send</button>
         </div>
