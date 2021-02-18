@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Custom stylesheets -->
-    <link rel="stylesheet" href="./desktop.css" />
-    <link rel="stylesheet" href="./tablet.css" />
-    <link rel="stylesheet" href="./mobile.css" />
+    <link rel="stylesheet" href="./css/desktop.css" />
+    <link rel="stylesheet" href="./css/tablet.css" />
+    <link rel="stylesheet" href="./css/mobile.css" />
 
     <!-- Google Fonts links -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -23,6 +23,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css"
     />
+
     <title>Task - Responsive Website</title>
   </head>
   <body>
@@ -56,7 +57,7 @@
     </section>
 
     <!-- Section - Content -->
-    <!-- <section>
+    <section>
       <div class="content">
         <div class="content__bg--3">
           <svg
@@ -87,8 +88,8 @@
         </div>
         <div class="content__bg--2">
           <svg
-            width="839"
-            height="1025"
+            width="100%"
+            height="100%"
             viewBox="0 0 839 1025"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -140,8 +141,8 @@
         </div>
         <div class="content__bg--1">
           <svg
-            width="1363"
-            height="734"
+            width="100%"
+            height="100%"
             viewBox="0 0 1363 734"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -239,12 +240,103 @@
           </svg>
         </div>
         <div class="content__video">
-          <video class="content__video--style" controls>
-            <source src="" type="video/mp4" />
+          <video class="content__video--style">
+            <source src="./assets//videos/stock video.mp4" type="video/mp4" />
           </video>
+          <div class="content__video--play-button">
+            <svg
+              width="151"
+              height="151"
+              viewBox="0 0 151 151"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g filter="url(#filter0_d)">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M75.5 95C92.897 95 107 80.897 107 63.5C107 46.103 92.897 32 75.5 32C58.103 32 44 46.103 44 63.5C44 80.897 58.103 95 75.5 95Z"
+                  fill="#38A5DB"
+                />
+              </g>
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M70 55L86 65L70 75V55Z"
+                fill="white"
+              />
+              <defs>
+                <filter
+                  id="filter0_d"
+                  x="0"
+                  y="0"
+                  width="151"
+                  height="151"
+                  filterUnits="userSpaceOnUse"
+                  color-interpolation-filters="sRGB"
+                >
+                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feColorMatrix
+                    in="SourceAlpha"
+                    type="matrix"
+                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                  />
+                  <feOffset dy="12" />
+                  <feGaussianBlur stdDeviation="22" />
+                  <feColorMatrix
+                    type="matrix"
+                    values="0 0 0 0 0.219608 0 0 0 0 0.647059 0 0 0 0 0.858824 0 0 0 0.6 0"
+                  />
+                  <feBlend
+                    mode="normal"
+                    in2="BackgroundImageFix"
+                    result="effect1_dropShadow"
+                  />
+                  <feBlend
+                    mode="normal"
+                    in="SourceGraphic"
+                    in2="effect1_dropShadow"
+                    result="shape"
+                  />
+                </filter>
+              </defs>
+            </svg>
+          </div>
+        </div>
+        <div class="content__social-icons-for-company">
+          <div class="content__social-icons-for-company-icon">
+            <svg
+              width="40"
+              height="40"
+              viewBox="0 0 40 40"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="20" cy="20" r="20" fill="#63C7FF" />
+              <path
+                d="M29.1093 15.4735C28.9374 23.2406 23.9531 28.6438 16.3906 28.9815C13.2969 29.1504 11.0625 28.1373 9 26.9553C11.2344 27.2931 14.1562 26.4488 15.7031 25.098C13.4687 24.9291 12.0937 23.7471 11.4062 21.8898C12.0937 22.0586 12.7812 21.8898 13.2969 21.8898C11.2344 21.2144 9.85937 20.0324 9.6875 17.3308C10.2031 17.6685 10.8906 17.8374 11.5781 17.8374C10.0312 16.9931 9 13.7849 10.2031 11.7587C12.4375 14.1226 15.1875 16.1489 19.6562 16.4866C18.4531 11.7587 24.9844 9.22597 27.5625 12.4341C28.7656 12.2653 29.625 11.7587 30.4844 11.421C30.1406 12.603 29.4531 13.2784 28.5938 13.9538C29.4531 13.7849 30.3125 13.6161 31 13.2784C30.8281 14.1226 29.9687 14.798 29.1093 15.4735Z"
+                fill="white"
+              />
+            </svg>
+          </div>
+          <div class="content__social-icons-for-company-icon">
+            <svg
+              width="40"
+              height="40"
+              viewBox="0 0 40 40"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="20" cy="20" r="20" fill="#63C7FF" />
+              <path
+                d="M24 9V13.125H21.25C20.425 13.125 19.875 13.675 19.875 14.5V17.25H24V21.375H19.875V31H15.75V21.375H13V17.25H15.75V13.8125C15.75 11.2 17.95 9 20.5625 9H24Z"
+                fill="white"
+              />
+            </svg>
+          </div>
         </div>
       </div>
-    </section> -->
+    </section>
 
     <!-- Section - Team -->
     <section>
@@ -958,6 +1050,6 @@
     </section>
 
     <!-- External JS -->
-    <script src="./main.js"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>
